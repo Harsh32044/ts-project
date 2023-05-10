@@ -1,10 +1,11 @@
-var User = /** @class */ (function () {
-    function User(email, name) {
-        this.city = "Varanasi";
+class User {
+    email;
+    name;
+    city = "Varanasi"; //Not taking in constructor,
+    constructor(email, name) {
         this.email = email;
         this.name = name;
     }
-    return User;
-}());
-var harsh = new User("h@s.com", "Harsh");
-console.log("".concat(harsh.name, "   ").concat(harsh.city, "  ").concat(harsh.email));
+}
+const harsh = new User("h@s.com", "Harsh");
+console.log(`${harsh.name}   ${harsh.city}  ${harsh.email}`);
