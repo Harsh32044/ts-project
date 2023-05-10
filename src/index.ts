@@ -13,7 +13,7 @@ class User {
 
 class Usr {
 
-    private _courseCount = 1
+    protected _courseCount = 1
     readonly city: string = "Varanasi"
     constructor(
         public email: string,
@@ -39,6 +39,17 @@ class Usr {
         console.log("Token Deleted")
     }
 
+}
+
+class SubUser extends Usr {
+    //Inheritance
+    //Cannot acquire private properties of parent class
+    //Protected properties will be accessible in same class and all its child classes
+    isFamily: boolean= true
+
+    changeCourseCount() {
+        this._courseCount = 5
+    }
 }
 
 const harsh = new User ("h@s.com", "Harsh")

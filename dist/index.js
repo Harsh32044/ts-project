@@ -34,5 +34,14 @@ class Usr {
         console.log("Token Deleted");
     }
 }
+class SubUser extends Usr {
+    //Inheritance
+    //Cannot acquire private properties of parent class
+    //Protected properties will be accessible in same class and all its child classes
+    isFamily = true;
+    changeCourseCount() {
+        this._courseCount = 5;
+    }
+}
 const harsh = new User("h@s.com", "Harsh");
 console.log(`${harsh.name}   ${harsh.city}  ${harsh.email}`);
