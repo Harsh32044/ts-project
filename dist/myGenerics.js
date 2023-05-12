@@ -24,3 +24,14 @@ function identity4() {
 }
 //In JS version its a simple object getting returned
 console.log(identity4());
+function getSearchProducts(products) {
+    //do some DB ops
+    const myIndex = 3;
+    return products[myIndex];
+}
+const getSearchProductsArrow = (products) => {
+    // do some DB Ops
+    const myIndex = 3;
+    return products[myIndex]; //Returning the value which has same Type as each elements in the products array
+};
+// <T,> is usually written in JSX syntax to differentiate from JSX elements

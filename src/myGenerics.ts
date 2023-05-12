@@ -43,8 +43,9 @@ function getSearchProducts<T>(products: T[]): T {
     return products[myIndex]
 }
 
-const getSearchProductsArrow  = <T>(products: T[]) : T => {
+const getSearchProductsArrow  = <T,>(products: T[]) : T => {
     // do some DB Ops
     const myIndex = 3
-    return products[myIndex]
+    return products[myIndex] //Returning the value which has same Type as each elements in the products array
 }
+// <T,> is usually written in JSX syntax to differentiate from JSX elements
