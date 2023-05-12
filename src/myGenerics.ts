@@ -36,3 +36,15 @@ function identity4<Type>(): Type {
 }
 //In JS version its a simple object getting returned
 console.log(identity4())
+
+function getSearchProducts<T>(products: T[]): T {
+    //do some DB ops
+    const myIndex = 3
+    return products[myIndex]
+}
+
+const getSearchProductsArrow  = <T>(products: T[]) : T => {
+    // do some DB Ops
+    const myIndex = 3
+    return products[myIndex]
+}
