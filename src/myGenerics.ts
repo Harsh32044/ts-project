@@ -49,3 +49,6 @@ const getSearchProductsArrow  = <T,>(products: T[]) : T => {
     return products[myIndex] //Returning the value which has same Type as each elements in the products array
 }
 // <T,> is usually written in JSX syntax to differentiate from JSX elements
+// typeof [1,2,3] >> 'object'
+//typeof 1 >> 'number'
+//typeof "harsh" >> 'string'
